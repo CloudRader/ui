@@ -1,11 +1,19 @@
 # Products
 
+Discover the tools in the CloudRader ecosystem. Each application is designed to be modular and self-hostable.
+
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-user:{ .reservium-color } &nbsp; __[Reservium](https://docs-reservium.netlify.app){ .reservium-color }__
+-   <a href="https://docs.reservium.cloudrader.com" class="badge reservium" markdown>:fontawesome-solid-calendar-check: Reservium</a>
 
     ---
 
-    A ready-to-go reservation system.
+    A comprehensive reservation system for booking rooms, spaces, and shared resources. SSO-ready.
+
+-   <a href="https://github.com/CloudRader/inventarium-api" class="badge inventarium" markdown>:fontawesome-solid-boxes-stacked: Inventarium</a>
+
+    ---
+
+    *(In Development)* A lightweight system for tracking organizational assets and equipment lifecycle.
 
 </div>
