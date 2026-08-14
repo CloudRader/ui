@@ -8,7 +8,7 @@ CloudRader is an open-source initiative dedicated to building a connected ecosys
 
 ---
 
-## 🚀 The Ecosystem
+## :material-rocket-launch-outline: The Ecosystem
 
 We provide a collection of applications designed to solve everyday organizational needs without the complexity of traditional enterprise software.
 
@@ -20,7 +20,7 @@ We provide a collection of applications designed to solve everyday organizationa
 
 ---
 
-## 🌈 Our Philosophy
+## :material-palette-outline: Our Philosophy
 
 *   **Self-Hostable by Default** — You own your data. Our apps are container-friendly and easy to deploy anywhere.
 *   **Modular Architecture** — Each service is independent. Use only what you need, with no monolithic lock-in.
@@ -29,7 +29,7 @@ We provide a collection of applications designed to solve everyday organizationa
 
 ---
 
-## ☁️ Why “CloudRader”?
+## :material-cloud-outline: Why “CloudRader”?
 
 CloudRader is inspired by the idea of riding into the world of cloud technologies and conquering its complexity step by step. We build open-source tools, experiment with distributed systems, and try to make internal infrastructure less painful.
 
