@@ -57,6 +57,11 @@ Match the closest neighboring page rather than introducing a new layout.
 - Use admonitions, fenced code blocks, attributes, and grid cards only as
   supported by the existing `zensical.toml` configuration.
 - Reuse the existing badge, icon, and button patterns on index pages.
+- Use Zensical bundled icon shortcodes for visual markers, such as
+  `:material-cloud-outline:`. Prefer Material icons for general UI and section
+  markers; use Font Awesome brand icons for brands such as GitHub.
+- Do not use Unicode emoji in headings when a Zensical icon shortcode can
+  express the same meaning. Do not add custom SVG icons for ordinary content.
 - Keep shared styling in `extra.css`; do not duplicate global CSS in Markdown.
 - Use ASCII for new source text unless the content clearly requires another
   character set.
