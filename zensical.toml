@@ -15,46 +15,6 @@ nav = [  # example navifation
     {"Blog" =  [
         "blog/index.md",
     ]},
-  # {"User Guide" = [
-  #   {"Introduction" = [
-  #       "user-guide/introduction/index.md",
-  #       "user-guide/introduction/about.md",
-  #       "user-guide/introduction/why-use.md",
-  #   ]},
-  #   {"Quickstart" = [
-  #       "user-guide/quickstart/index.md",
-  #       # "user-guide/quickstart/example.md",
-  #   ]},
-  #   {"Basic Features" = [
-  #       "user-guide/basic-features/index.md",
-  #       # "user-guide/basic-features/example.md",
-  #   ]},
-  #   {"FAQ" = [
-  #       "user-guide/faq/index.md"
-  #   ]}
-  # ]},
-  # {"Manager Guide" = [
-  #   {"Introduction" = [
-  #       "manager-guide/introduction/index.md",
-  #   ]},
-  # ]},
-  # {"Hosting Guide" = [
-  #   {"Introduction" = [
-  #       "hosting-guide/introduction/index.md",
-  #   ]},
-  # ]},
-  # {"Contribute Guide" = [
-  #   {"Introduction" = [
-  #       "contribute-guide/introduction/index.md",
-  #   ]},
-  # ]},
-  # {"API Reference" = [
-  #   "api-reference/index.md",
-  # ]},
-  # {"Release Notes" = [
-  #   "release-notes/backend.md",
-  #   "release-notes/frontend.md",
-  # ]},
 ]
 
 [project.theme]
@@ -80,18 +40,18 @@ repo = "fontawesome/brands/github" # you can change this to any other icon from 
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
-scheme = "default"
+scheme = "slate"
 primary = "custom"
 # accent = "yellow"
-toggle.icon = "material/weather-sunny"
+toggle.icon = "material/weather-night"
 toggle.name = "Switch to light mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
-scheme = "slate"
+scheme = "default"
 # primary = "indigo"  # set prefer colors
 # accent = "yellow"
-toggle.icon = "material/weather-night"
+toggle.icon = "material/weather-sunny"
 toggle.name = "Switch to dark mode"
 
 [project.markdown_extensions.abbr]
