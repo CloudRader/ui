@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — CloudRader</title>
+  <meta name="description" content="Discover the tools in the CloudRader ecosystem. Each application is designed to be modular and self-hostable.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/logo.png" alt="CloudRader Logo" class="nav-logo">
+        <span class="nav-brand-text">Cloud<span>Rader</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html" class="nav-link active">Products</a></li>
+          <li><a href="../resources/index.html" class="nav-link">Resources</a></li>
+          <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title">Products</h1>
+        <p class="page-desc">
+          Discover the tools in the CloudRader ecosystem. Each application is designed to be modular and self-hostable.
+        </p>
+      </div>
+
+      <!-- Products Grid -->
+      <section class="section" style="padding-top: 0;">
+        <div class="products-grid">
+          <!-- Reservium Card -->
+          <div class="product-card reservium">
+            <div class="product-top">
+              <div class="product-meta">
+                <div class="product-icon-wrap" style="color: var(--brand-green);">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                    <path d="m9 16 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <a href="https://docs.reservium.cloudrader.com" target="_blank" rel="noopener noreferrer" class="badge badge-green">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                    <path d="m9 16 2 2 4-4"></path>
+                  </svg>
+                  Reservium
+                </a>
+              </div>
+
+              <h2 class="product-name">Reservium</h2>
+              <p class="product-desc">
+                A comprehensive reservation system for booking rooms, spaces, and shared resources. SSO-ready.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">OIDC</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+
+            <div class="product-footer">
+              <a href="https://docs.reservium.cloudrader.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>Documentation</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Inventarium Card -->
+          <div class="product-card inventarium">
+            <div class="product-top">
+              <div class="product-meta">
+                <div class="product-icon-wrap" style="color: var(--brand-purple);">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <a href="https://github.com/CloudRader/inventarium-api" target="_blank" rel="noopener noreferrer" class="badge badge-purple">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                  Inventarium
+                </a>
+              </div>
+
+              <h2 class="product-name">Inventarium</h2>
+              <p class="product-desc">
+                <em>(In Development)</em> A lightweight system for tracking organizational assets and equipment lifecycle.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">OIDC</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+
+            <div class="product-footer">
+              <a href="https://github.com/CloudRader/inventarium-api" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <span>GitHub API Repo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-brand">
+            <img src="../assets/logo.png" alt="CloudRader Logo" class="nav-logo" style="height: 32px;">
+            <span class="nav-brand-text">Cloud<span>Rader</span></span>
+          </a>
+          <p>An open-source initiative dedicated to building connected, self-hostable tools for communities and organizations.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html" class="footer-link">Products</a></li>
+            <li><a href="../resources/index.html" class="footer-link">Resources</a></li>
+            <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Ecosystem</h5>
+          <ul class="footer-links">
+            <li><a href="https://docs.reservium.cloudrader.com" target="_blank" rel="noopener noreferrer" class="footer-link">Reservium Docs</a></li>
+            <li><a href="https://github.com/CloudRader/inventarium-api" target="_blank" rel="noopener noreferrer" class="footer-link">Inventarium API</a></li>
+            <li><a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Organization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Community</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/CloudRader/.github/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" class="footer-link">Contributing</a></li>
+            <li><a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="footer-link">Discussions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 CloudRader. Open Source Software.</span>
+        <span>Built with care for self-hosters and developers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
+</body>
+</html>

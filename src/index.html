@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudRader</title>
+  <meta name="description" content="CloudRader is an open-source initiative dedicated to building a connected ecosystem of independent, self-hostable services.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="CloudRader Logo" class="nav-logo">
+        <span class="nav-brand-text">Cloud<span>Rader</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="products/index.html" class="nav-link">Products</a></li>
+          <li><a href="resources/index.html" class="nav-link">Resources</a></li>
+          <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="badge badge-cyan">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              Modular
+            </span>
+            <span class="badge badge-green">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              Self-hostable
+            </span>
+            <span class="badge badge-amber">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              Cloud-native
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="text-gradient">CloudRader</span>
+          </h1>
+
+          <p class="hero-desc">
+            CloudRader is an open-source initiative dedicated to building a connected ecosystem of independent, self-hostable services. We empower organizations and communities with tools that work perfectly on their own, but even better together.
+          </p>
+
+          <div class="hero-actions">
+            <a href="products/index.html" class="btn btn-primary">
+              <span>Explore our Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>View on GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Ecosystem Dashboard Graphic -->
+        <div class="hero-interactive">
+          <div class="interactive-preview-card">
+            <div class="preview-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <!-- <div class="preview-status">
+                <span class="pulse-dot"></span>
+                <span>cloudrader-cluster: active</span>
+              </div> -->
+            </div>
+
+            <div class="preview-grid">
+              <div class="preview-item">
+                <div class="preview-item-title" style="color: var(--brand-green);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  Reservium
+                </div>
+                <div class="preview-item-sub">Reservation & Space Booking</div>
+                <span class="preview-metric">Flagship • SSO Ready</span>
+              </div>
+
+              <div class="preview-item">
+                <div class="preview-item-title" style="color: var(--brand-purple);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                  Inventarium
+                </div>
+                <div class="preview-item-sub">Asset & Equipment Tracking</div>
+                <span class="preview-metric">Planned • In Dev</span>
+              </div>
+
+              <div class="preview-item">
+                <div class="preview-item-title" style="color: var(--brand-cyan);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  OpenID SSO
+                </div>
+                <div class="preview-item-sub">Unified Auth Core</div>
+                <span class="preview-metric">OAuth2 • OIDC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecosystem Overview Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-cyan" style="margin-bottom: 12px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+            Overview
+          </div>
+          <h2 class="section-title">The Ecosystem</h2>
+          <p class="section-desc">We provide a collection of applications designed to solve everyday organizational needs without the complexity of traditional enterprise software.</p>
+        </div>
+
+        <div style="max-width: 860px; margin: 0 auto;">
+          <div class="callout-box" style="border-left-color: var(--brand-green);">
+            <div class="callout-title" style="color: var(--brand-green);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Reservium — Reservation System
+            </div>
+            <div class="callout-content">
+              Our flagship project. A practical tool for booking rooms, spaces, and shared resources. Supports SSO, multiple reservation types, and a clear, modern interface.
+            </div>
+          </div>
+
+          <div class="callout-box" style="border-left-color: var(--brand-purple);">
+            <div class="callout-title" style="color: var(--brand-purple);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              Inventarium — Asset Tracking (Planned)
+            </div>
+            <div class="callout-content">
+              A lightweight system for tracking equipment and organizational assets. Designed for simplicity and ease of use.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-cyan" style="margin-bottom: 12px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+            Philosophy
+          </div>
+          <h2 class="section-title">Our Philosophy</h2>
+          <p class="section-desc">Guided by core values that put autonomy, simplicity, and flexibility first.</p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3 class="pillar-title">Self-Hostable by Default</h3>
+            <p class="pillar-text">You own your data. Our apps are container-friendly and easy to deploy anywhere.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </div>
+            <h3 class="pillar-title">Modular Architecture</h3>
+            <p class="pillar-text">Each service is independent. Use only what you need, with no monolithic lock-in.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <h3 class="pillar-title">Transparent Development</h3>
+            <p class="pillar-text">Open code, open roadmaps, and open communication.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            </div>
+            <h3 class="pillar-title">Interoperability</h3>
+            <p class="pillar-text">Designed to integrate seamlessly into your existing workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why CloudRader Section -->
+    <section class="section">
+      <div class="container">
+        <div class="arch-card">
+          <div style="text-align: center; max-width: 720px; margin: 0 auto 20px;">
+            <div class="badge badge-cyan" style="margin-bottom: 12px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              Origin
+            </div>
+            <h2 class="section-title">Why “CloudRader”?</h2>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.65;">
+              CloudRader is inspired by the idea of riding into the world of cloud technologies and conquering its complexity step by step. We build open-source tools, experiment with distributed systems, and try to make internal infrastructure less painful.
+            </p>
+          </div>
+
+          <div class="story-box">
+            <div class="story-quote">
+              “Sometimes the cloud conquers us back—but that's just part of the deployment process.”
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 36px;">
+            <p style="font-weight: 600; margin-bottom: 18px; font-size: 1.05rem;">
+              <strong>CloudRader</strong> is growing step by step. If you want to explore, use, or contribute — you’re welcome.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+              <a href="products/index.html" class="btn btn-primary">Explore our Projects</a>
+              <a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/logo.png" alt="CloudRader Logo" class="nav-logo" style="height: 32px;">
+            <span class="nav-brand-text">Cloud<span>Rader</span></span>
+          </a>
+          <p>An open-source initiative dedicated to building connected, self-hostable tools for communities and organizations.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="products/index.html" class="footer-link">Products</a></li>
+            <li><a href="resources/index.html" class="footer-link">Resources</a></li>
+            <li><a href="blog/index.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Ecosystem</h5>
+          <ul class="footer-links">
+            <li><a href="https://docs.reservium.cloudrader.com" target="_blank" rel="noopener noreferrer" class="footer-link">Reservium Docs</a></li>
+            <li><a href="https://github.com/CloudRader/inventarium-api" target="_blank" rel="noopener noreferrer" class="footer-link">Inventarium API</a></li>
+            <li><a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Organization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Community</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/CloudRader/.github/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" class="footer-link">Contributing</a></li>
+            <li><a href="https://github.com/CloudRader" target="_blank" rel="noopener noreferrer" class="footer-link">Discussions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 CloudRader. Open Source Software.</span>
+        <span>Built with care for self-hosters and developers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
