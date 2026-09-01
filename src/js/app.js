@@ -93,4 +93,86 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Scroll Reveal Animations
+  const revealElements = document.querySelectorAll('.reveal, .reveal-stagger');
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.1,
+      rootMargin: '0px 0px -30px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('active'));
+  }
+
+  // Copy to Clipboard Engine
+  const copyButtons = document.querySelectorAll('.copy-btn');
+
+  copyButtons.forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const targetSelector = btn.getAttribute('data-copy-target');
+      let textToCopy = btn.getAttribute('data-copy-text');
+
+      if (!textToCopy && targetSelector) {
+        textToCopy = document.querySelector(targetSelector)?.innerText;
+      } else if (!textToCopy) {
+        textToCopy = btn.closest('.code-card')?.querySelector('pre')?.innerText;
+      }
+
+      if (!textToCopy) return;
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy.trim());
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = textToCopy.trim();
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        }
+
+        // Animate button feedback
+        btn.classList.add('copied');
+        const iconSpan = btn.querySelector('.copy-icon');
+        const textSpan = btn.querySelector('.copy-text');
+
+        if (iconSpan) {
+          iconSpan.innerHTML = `
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>`;
+        }
+        if (textSpan) textSpan.textContent = 'Copied!';
+
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          if (iconSpan) {
+            iconSpan.innerHTML = `
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>`;
+          }
+          if (textSpan) textSpan.textContent = 'Copy';
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy text: ', err);
+      }
+    });
+  });
 });
